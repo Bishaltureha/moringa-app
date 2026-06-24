@@ -5,7 +5,7 @@ const steps = [
   { num: '4', title: 'We Ship to You',    desc: 'Your order is packed, certified, and dispatched with all required export documentation.' },
 ];
 
-export default function HowItWorks({ setPage }) {
+export default function HowItWorks() {
   return (
     <section id="how" className="how-section">
       <p className="section-label">The Process</p>
@@ -24,7 +24,7 @@ export default function HowItWorks({ setPage }) {
       <div style={{ textAlign: 'center', marginTop: '3rem' }}>
         <button
           className="btn-how-cta"
-          onClick={() => { setPage('contact'); window.scrollTo({ top: 0 }); }}
+          onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
         >
           Get a Quote →
         </button>

@@ -6,7 +6,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero-inner">
         <div className="hero-badge">
           <Leaf size={13} style={{ marginRight: '0.35rem', verticalAlign: 'middle' }} />

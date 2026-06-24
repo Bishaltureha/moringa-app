@@ -1,15 +1,15 @@
 import logo from '../assets/logo.png';
 
 const links = [
-  { label: 'Home',     id: 'home'     },
-  { label: 'About',    id: 'about'    },
-  { label: 'Products', id: 'products' },
-  { label: 'Why GSO',  id: 'whyus'   },
-  { label: 'Process',  id: 'process'  },
-  { label: 'Contact',  id: 'contact'  },
+  { label: 'Home',     id: 'hero'    },
+  { label: 'About',    id: 'about'   },
+  { label: 'Products', id: 'product' },
+  { label: 'Why GSO',  id: 'why'     },
+  { label: 'Process',  id: 'how'     },
+  { label: 'Contact',  id: 'contact' },
 ];
 
-export default function Footer({ setPage }) {
+export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
@@ -35,7 +35,7 @@ export default function Footer({ setPage }) {
           <ul>
             {links.map(({ label, id }) => (
               <li key={id}>
-                <button onClick={() => { setPage(id); window.scrollTo({ top: 0 }); }}>
+                <button onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })}>
                   {label}
                 </button>
               </li>

@@ -317,10 +317,16 @@ section { padding: 5rem 5%; }
 .pdc-variety { background: var(--green-pale); border-radius: 8px; padding: 0.85rem 1rem; }
 .pdc-variety-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.3rem; flex-wrap: wrap; }
 .pdc-variety-header strong { font-size: 0.92rem; color: var(--dark); }
-.pdc-variety-badge { font-size: 0.7rem; font-weight: 700; background: var(--green); color: #fff; padding: 0.15rem 0.6rem; border-radius: 50px; }
+.pdc-variety-badge {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  font-size: 0.7rem; font-weight: 700;
+  background: var(--green); color: #fff;
+  padding: 0.2rem 0.65rem; border-radius: 50px;
+}
 .pdc-variety p { font-size: 0.82rem; color: var(--gray); line-height: 1.6; margin: 0; }
 .pdc-trust { display: flex; gap: 0.5rem; flex-wrap: wrap; }
 .pdc-trust-badge {
+  display: inline-flex; align-items: center; gap: 0.3rem;
   background: var(--green-pale); color: var(--green);
   font-size: 0.73rem; font-weight: 700;
   padding: 0.25rem 0.75rem; border-radius: 50px;

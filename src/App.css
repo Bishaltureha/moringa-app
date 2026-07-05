@@ -341,7 +341,7 @@ section { padding: 5rem 5%; }
   margin-top: 3rem;
 }
 .why-card { text-align: center; padding: 1.5rem 1rem; }
-.why-icon { font-size: 2.6rem; margin-bottom: 0.8rem; display: block; }
+.why-icon { font-size: 2.6rem; margin: 0 auto 0.8rem; display: block; }
 .why-card h3 { font-size: 1rem; margin-bottom: 0.4rem; }
 .why-card p { font-size: 0.86rem; color: var(--gray); }
 
@@ -614,6 +614,255 @@ section { padding: 5rem 5%; }
   box-shadow: 0 6px 28px rgba(37,211,102,0.65);
 }
 
+/* ── Global Markets ─────────────────────────────────────── */
+.gm-section { background: var(--light); }
+
+.gm-table-wrap {
+  margin-top: 2.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 14px;
+  border: 1px solid #e4e9e4;
+  background: var(--white);
+  max-width: 100%;
+}
+.gm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  min-width: 700px;
+}
+.gm-table thead tr {
+  background: var(--green-pale);
+  border-bottom: 2px solid #d4e8d4;
+}
+.gm-table th {
+  padding: 0.9rem 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--dark);
+  white-space: nowrap;
+}
+.gm-th-product { text-align: left; min-width: 180px; }
+.gm-th-market { min-width: 80px; }
+.gm-table tbody tr { border-bottom: 1px solid #f0f0f0; transition: background 0.15s; }
+.gm-table tbody tr:hover { background: #fafdf5; }
+.gm-table tbody tr:last-child { border-bottom: none; }
+.gm-product {
+  padding: 0.85rem 1rem;
+  font-weight: 600;
+  color: var(--dark);
+  font-size: 0.87rem;
+}
+.gm-note-inline {
+  color: var(--green);
+  font-size: 0.75rem;
+  vertical-align: super;
+  margin-left: 2px;
+  cursor: default;
+}
+.gm-table td { padding: 0.75rem 1rem; }
+.gm-demand {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.gm-cell { text-align: center; }
+.gm-footnote {
+  padding: 0.85rem 1.25rem;
+  font-size: 0.78rem;
+  color: var(--gray);
+  background: #fffbeb;
+  border-top: 1px solid #f0e8c0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.gm-starters {
+  margin-top: 3rem;
+}
+.gm-starters h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 0.4rem;
+}
+.gm-starters > p {
+  color: var(--gray);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+.gm-starter-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.gm-starter-card {
+  background: var(--white);
+  border: 1px solid #e0ead0;
+  border-radius: 12px;
+  padding: 1.4rem 1.5rem;
+  border-top: 3px solid var(--green);
+}
+.gm-starter-card strong {
+  display: block;
+  font-size: 1rem;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+.gm-starter-card p {
+  font-size: 0.86rem;
+  color: var(--gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.gm-certs {
+  margin-top: 3rem;
+  background: var(--white);
+  border-radius: 14px;
+  border: 1px solid #e4e9e4;
+  padding: 2rem 2rem 1.5rem;
+}
+.gm-certs-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+.gm-certs-header h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin: 0;
+}
+.gm-certs-sub {
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+}
+.gm-cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.gm-cert-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+.gm-cert-item strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--dark);
+  font-weight: 700;
+}
+.gm-cert-item p {
+  font-size: 0.8rem;
+  color: var(--gray);
+  margin: 0.15rem 0 0;
+  line-height: 1.4;
+}
+
+.gm-organic-banner {
+  margin-top: 2rem;
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-mid) 100%);
+  border-radius: 14px;
+  padding: 1.75rem 2rem;
+  color: var(--white);
+}
+.gm-organic-banner strong {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.gm-organic-banner p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0;
+}
+
+/* desktop/mobile visibility toggle — table on desktop, cards on tablet+mobile */
+.gm-desktop-only { display: block; }
+.gm-mobile-only  { display: none; }
+@media (max-width: 1024px) {
+  .gm-desktop-only { display: none; }
+  .gm-mobile-only  { display: block; }
+  .gm-starter-cards { grid-template-columns: 1fr 1fr; }
+  .gm-cert-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .gm-starter-cards { grid-template-columns: 1fr; }
+  .gm-certs { padding: 1.25rem 1rem; }
+  .gm-organic-banner { padding: 1.25rem 1.2rem; }
+}
+
+/* ── Mobile product cards ───────────────────────────────── */
+.gm-mobile-header-note {
+  font-size: 0.78rem;
+  color: var(--gray);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.gm-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.gm-product-card {
+  background: var(--white);
+  border: 1px solid #e4e9e4;
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+}
+.gm-pc-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.gm-pc-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--dark);
+}
+.gm-pc-markets {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.gm-pc-market {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.73rem;
+}
+.gm-pc-market.ok   { background: #f0fdf4; border: 1px solid #bbf7d0; }
+.gm-pc-market.warn { background: #fffbeb; border: 1px solid #fde68a; }
+.gm-pc-flag  { font-size: 0.9rem; }
+.gm-pc-mname { font-weight: 600; color: var(--dark); }
+.gm-pc-note {
+  font-size: 0.75rem;
+  color: var(--gray);
+  margin: 0.6rem 0 0;
+  padding-top: 0.6rem;
+  border-top: 1px solid #f0f0f0;
+  line-height: 1.5;
+}
+
 /* ── Hamburger & Mobile Menu ─────────────────────────────── */
 .nav-hamburger {
   display: none;
@@ -684,4 +933,5 @@ section { padding: 5rem 5%; }
   .hero-stats { gap: 1.5rem; }
   .trust-bar { gap: 1.2rem; }
   .footer { flex-direction: column; text-align: center; }
+  .gm-starters h3 { font-size: 1.1rem; }
 }
